@@ -1,0 +1,83 @@
+/* ---------------- STANDARD CONTENT PAGE STYLING ---------------- */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  cursor: url('/images/cursor.png'),auto;
+}
+
+/* ---------------- GRID STYLING ---------------- */
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* Four rows of equal height */
+  /* grid-template-rows: repeat(4, 1fr); Four rows of equal height */
+  height: 100%;
+}
+
+.grid-item {
+  font-size: 7vw;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 800;
+  display: flex; /*Use flexbox for better alignment control*/
+  align-items: center; /*Vertically center the content*/ 
+  justify-content: center;
+  padding-left: 20px;
+}
+
+/* Example styles for each row */
+.about-row { 
+  background-color: #f2ff26; 
+}
+.portfolio-row { 
+  background-color: #993300; 
+}
+.cv-row { 
+  background-color: #BFFFE6; 
+}
+.contact-row { 
+  background-color: #0066FF; 
+}
+
+a { 
+  text-decoration: none;
+}
+
+.section-toggle-about {
+  text-decoration: none; /* Remove underline */
+  color: #0066FF;
+  cursor: url('/images/cursor-filled.png'), pointer;
+  transition: color 0.3s ease;
+}
+
+.section-toggle-portfolio {
+  text-decoration: none; /* Remove underline */
+  color: #BFFFE6;
+  cursor: url('/images/cursor-filled.png'), pointer;
+  transition: color 0.3s ease;
+}
+
+.section-toggle-cv {
+  text-decoration: none; /* Remove underline */
+  color: #993300;
+  cursor: url('/images/cursor-filled.png'), pointer;
+  transition: color 0.3s ease;
+}
+
+.section-toggle-contact {
+  text-decoration: none; /* Remove underline */
+  color: #ffff33;
+  cursor: url('/images/cursor-filled.png'), pointer;
+  transition: color 0.3s ease;
+}
+
+.section-toggle-portfolio:hover,
+.section-toggle-contact:hover {
+  color: black; /* Change text color to black on hover */
+}
+
+.section-toggle-about:hover,
+.section-toggle-cv:hover {
+  color: white; /* Change text color to black on hover */
+}

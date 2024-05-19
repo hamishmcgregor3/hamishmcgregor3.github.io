@@ -1,0 +1,68 @@
+/* ---------------- STANDARD CONTENT PAGE STYLING ---------------- */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #0066ff;
+  cursor: url('/images/cursor.png'),auto;
+}
+
+.page-container {
+  position: relative;
+  font-family: "forma-djr-deck", sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
+  color: #ffff33;
+  background-color: #0066ff;
+}
+
+.text-container {
+  position: relative;
+  padding: 2vw;
+}
+
+/* ---------------- TITLE STYLING ---------------- */
+
+.title-container {
+  padding: 2vw;
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between;
+  font-family: "forma-djr-deck", sans-serif;
+}
+
+.title {
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.back-arrow {
+  align-self: flex-end; /* Align right item to the end of the container */
+  color: #ffff33;
+}
+
+/* Style for the text "Back as well" */
+.back-text {
+  margin-left: 5px; /* Add some space between the arrow and text */
+  color: #ffff33;
+  font-size: 2vw; /* Adjust font size as needed */
+}
+
+a { 
+  color: #ffff33;
+  cursor: url('/images/cursor-filled.png'), pointer;
+}
+
+/* ---------------- CONTENT STYLING ---------------- */
+
+.content-container {
+  position: relative;
+  padding: 2vw;
+  margin-top: 2vh;
+}
+
+.email-me p,
+.email-me a {
+  display: inline; /* Make the paragraph and link inline */
+}

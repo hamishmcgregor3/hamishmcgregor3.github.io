@@ -1,0 +1,193 @@
+/* ---------------- STANDARD CONTENT PAGE STYLING ---------------- */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #bfffe6;
+  cursor: url('/images/cursor.png'),auto;
+}
+
+.page-container {
+  position: relative;
+  font-family: "forma-djr-deck", sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
+  color: #993300;
+}
+
+.text-container {
+  position: relative;
+  padding: 2vw;
+}
+
+a { 
+  cursor: url('/images/cursor-filled.png'), pointer;
+}
+
+/* ---------------- SCROLL BAR ---------------- */
+
+::-webkit-scrollbar {
+  width: 8px;             /* Width of the entire scrollbar */
+  height: 8px;            /* Height of the entire scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+  background: #bfffe6;     /* Background of the scrollbar track */
+  border-radius: 15px;     /* Rounded corners of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #993300;        /* Color of the scrollbar thumb */
+  border-radius: 15px;     /* Rounded corners of the scrollbar thumb */
+}
+
+/* ---------------- TITLE STYLING ---------------- */
+
+.title-container {
+  padding: 2vw;
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between;
+  font-family: "forma-djr-deck", sans-serif;
+}
+
+.title {
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.back-arrow {
+  align-self: flex-end; /* Align right item to the end of the container */
+  color: #993300;
+  cursor: url('/images/cursor-filled.png'), pointer;
+}
+
+/* Style for the text "Back as well" */
+.back-text {
+  margin-left: 5px; /* Add some space between the arrow and text */
+  color: #993300;
+  font-size: 2vw; /* Adjust font size as needed */
+  cursor: url('/images/cursor-filled.png'), pointer;
+}
+
+/* ---------------- WORK CONTENT STYLING ---------------- */
+
+.work-container {
+  margin-top: 80px;
+}
+
+.work-title {
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.work-subheader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.job-title {
+  font-weight: 600;
+}
+
+.job-date {
+  font-style: italic;
+}
+
+.work-text-content {
+  font-weight: 400;
+  font-size: 2vw;
+  margin-top: 20px;
+}
+
+/* ---------------- EDUCATION CONTENT STYLING ---------------- */
+
+.education-container {
+  margin-top: 80px;
+}
+
+.education-title {
+  text-decoration: underline;
+}
+
+.education-subheader {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.education-subheader-title {
+  font-weight: 600;
+}
+
+.education-date {
+  font-style: italic;
+}
+
+.education-text-content {
+  font-weight: 400;
+  font-size: 2vw;
+  margin-top: 20px;
+}
+
+.computer-science {
+  font-weight: 600;
+}
+
+.design {
+  font-weight: 600;
+}
+
+/* ---------------- SKILLS CONTENT STYLING ---------------- */
+
+.skills-container {
+  margin-top: 80px;
+}
+
+.skills-title {
+  text-decoration: underline;
+}
+
+.skills-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+  gap: 10px; /* Gap between grid items */
+}
+
+/* Style for grid items */
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.75vw;
+  font-weight: 600;
+}
+
+/* ---------------- RESUME CONTENT STYLING ---------------- */
+
+.resume-container {
+  margin-top: 80px;
+}
+
+.resume-title {
+  text-decoration: underline;
+}
+
+.resume-download {
+  font-size: 1.75vw;
+  font-weight: 600;
+  text-decoration: none;
+  color: #993300;
+}
+
+.resume-download { 
+    margin-top: 50px;
+    color: #993300;
+    text-decoration: none;
+}
+
+.resume-container-2{ 
+    margin-top: 40px;
+    margin-left: 40px;
+}

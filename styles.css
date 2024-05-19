@@ -1,0 +1,158 @@
+/* ---------------- STANDARD CONTENT PAGE STYLING ---------------- */
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #ffff33;
+  cursor: url("/images/cursor.png"), auto;
+}
+
+.page-container {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 520px) {
+  .subtitle-1,
+  .subtitle-2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-1 {
+    align-self: flex-start;
+  }
+
+  .title-2 {
+    align-self: flex-end;
+  }
+}
+
+/* ---------------- LAMP STYLING ---------------- */
+
+.lamp-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.lamp {
+  height: 45vh;
+  cursor: url("/images/cursor-filled.png"), pointer;
+}
+
+/* ---------------- TITLE STYLING ---------------- */
+
+.title-container {
+  display: flex;
+  height: 20vh;
+  width: 100%;
+  position: relative;
+  font-size: 10vw;
+  line-height: 10vw;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 800;
+  color: #172713;
+  z-index: 2;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.title-1 {
+  position: relative;
+}
+
+.title-2 {
+  position: relative;
+}
+
+/* ---------------- SUBTITLE STYLING ---------------- */
+
+.subtitle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 3vw;
+  color: #172713;
+  position: relative;
+  width: 90%;
+  text-decoration: underline;
+}
+
+.subtitle-2 {
+  text-align: right;
+}
+
+/* ---------------- IMAGE STYLING ---------------- */
+
+.image-container {
+  background-color: #bffff8;
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Ensure the container is positioned relative */
+}
+
+.couch-scene {
+  width: 90%;
+  object-fit: contain; /* Ensures the image maintains aspect ratio */
+}
+
+.circle-pattern {
+  position: absolute; /* Position the pattern image absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the pattern image cover the entire container */
+  height: 100%; /* Make the pattern image cover the entire container */
+  opacity: 0.3; /* Adjust opacity as needed */
+  pointer-events: none; /* Ensure the overlay does not interfere with interactions */
+}
+
+/* ---------------- nav-button STYLING ---------------- */
+
+/* <!-- <a href="/pages/navigation.html">
+<div class="nav-button">CLICK ME</div>
+</a> --> */
+
+/* .nav-button {
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2vh;
+  color: #172713;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 17%;
+  cursor: pointer; 
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: white; 
+} */

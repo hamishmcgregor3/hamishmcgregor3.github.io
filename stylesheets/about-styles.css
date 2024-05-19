@@ -1,0 +1,111 @@
+/* ---------------- STANDARD CONTENT PAGE STYLING ---------------- */
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background-color: #ffff33;
+  cursor: url("/images/cursor.png"), auto;
+}
+
+.page-container {
+  position: relative;
+  font-family: "forma-djr-deck", sans-serif;
+  font-size: 3vw;
+  font-weight: 400;
+  color: #0066ff;
+}
+
+.text-container {
+  position: relative;
+  padding: 2vw;
+}
+
+/* ---------------- SCROLL BAR ---------------- */
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the entire scrollbar */
+  height: 8px; /* Height of the entire scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffff33; /* Background of the scrollbar track */
+  border-radius: 15px; /* Rounded corners of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0066ff; /* Color of the scrollbar thumb */
+  border-radius: 15px; /* Rounded corners of the scrollbar thumb */
+}
+
+/* ---------------- TITLE STYLING ---------------- */
+
+.title-container {
+  padding: 2vw;
+  display: flex; /* Use flexbox layout */
+  justify-content: space-between;
+  font-family: "forma-djr-deck", sans-serif;
+}
+
+.title {
+  font-size: 12vw;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.back-arrow {
+  align-self: flex-end; /* Align right item to the end of the container */
+  color: #0066ff;
+}
+
+/* Style for the text "Back as well" */
+.back-text {
+  margin-left: 5px; /* Add some space between the arrow and text */
+  color: #0066ff;
+  font-size: 2vw; /* Adjust font size as needed */
+}
+
+a {
+  font-weight: 500;
+  cursor: url("/images/cursor-filled.png"), pointer;
+}
+
+/* ---------------- ABOUT TEXT STYLING ---------------- */
+
+.name {
+  font-weight: 800;
+}
+
+.software-developer {
+  font-weight: 800;
+}
+
+.design {
+  font-weight: 800;
+}
+
+.studio-hamish {
+  font-weight: 800;
+  text-decoration: none; /* Remove underline */
+  cursor: url("/images/cursor-filled.png"), pointer;
+  transition: color 0.3s ease;
+  color: #0066ff;
+  font-size: 3vw;
+}
+
+.studio-hamish:hover {
+  color: white; /* Change text color to white on hover */
+}
+
+/* ---------------- LOCATION STYLING ---------------- */
+
+.location-text-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.location-subheader {
+  font-weight: 800;
+  margin-left: 1vw;
+}

@@ -1,0 +1,113 @@
+/* ---------------- STANDARD CONTENT PAGE STYLING ---------------- */
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #ffff33;
+}
+
+.page-container {
+  position: relative;
+  background-image: url("/images/circle-pattern-overlay.png");
+  width: 100%;
+  height: 100%;
+  /* overflow-y: hidden;
+  overflow-x: hidden; */
+}
+
+/* ---------------- LAMP & LINK STYLING ---------------- */
+
+.lamp-container {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lamp {
+  height: 30vw;
+}
+
+.nav-button {
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 2vw;
+  color: #172713;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  bottom: 17%;
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: white; /* Change text color to white on hover */
+}
+
+/* ---------------- TITLE STYLING ---------------- */
+
+.content-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  font-size: 11vw;
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 800;
+  color: #172713;
+  line-height: 1;
+}
+
+.subtitle-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  font-family: "forma-djr-deck", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2vw;
+  color: #172713;
+  position: relative;
+}
+
+.main-content-container {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  background-color: #bffff8;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  height: 65vh;
+
+  /* position: absolute; 
+  left: 50%; 
+  bottom: 0;
+  transform: translate(-50%, 0%); */
+}
+
+/* .image-overlay {
+  position: relative;
+  width: 100%;
+  background-image: url("/images/circle-pattern-overlay.png");
+  opacity: 0.175;
+  z-index: 1;
+} */
+
+.couch-scene {
+  width: 70%;
+  position: relative;
+  object-fit: contain; /* Ensures the image maintains aspect ratio */
+}
