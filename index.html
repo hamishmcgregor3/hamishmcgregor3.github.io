@@ -11,14 +11,22 @@
   <body>
     <div class="page-container">
       <div class="lamp-container">
+        <a href="/pages/navigation.html">
         <img
           src="/images/click_here.png"
           alt="landing-page-lamp"
           class="lamp"
-          id="lampImage"
           onmouseover="this.src='/images/click_here_hover.png';" 
           onmouseout="this.src='/images/click_here.png';"
         />
+        <img
+        src="/images/click_here_mobile.png"
+        alt="landing-page-lamp-long"
+        class="lamp-long"
+        onmouseover="this.src='/images/click_here_mobile_hover.png';" 
+        onmouseout="this.src='/images/click_here_mobile.png';"
+      />
+      </a>
       </div>
     <div class="title-container">
       <div class="title-1">STUDIO</div>
@@ -45,6 +53,7 @@
       </div>
     </div>
     </div>
-    <script src="/script.js"></script>
+    <script src="/node_modules/animejs/lib/anime.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

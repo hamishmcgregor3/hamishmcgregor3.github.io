@@ -4,38 +4,15 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #ffff33;
+  background-color: #FFFF33;
   cursor: url("/images/cursor.png"), auto;
 }
 
 .page-container {
   position: relative;
   font-family: "forma-djr-deck", sans-serif;
-  font-size: 3vw;
   font-weight: 400;
-  color: #0066ff;
-}
-
-.text-container {
-  position: relative;
-  padding: 2vw;
-}
-
-/* ---------------- SCROLL BAR ---------------- */
-
-::-webkit-scrollbar {
-  width: 8px; /* Width of the entire scrollbar */
-  height: 8px; /* Height of the entire scrollbar (for horizontal scrollbar) */
-}
-
-::-webkit-scrollbar-track {
-  background: #ffff33; /* Background of the scrollbar track */
-  border-radius: 15px; /* Rounded corners of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-  background: #0066ff; /* Color of the scrollbar thumb */
-  border-radius: 15px; /* Rounded corners of the scrollbar thumb */
+  color: #1991C2;
 }
 
 /* ---------------- TITLE STYLING ---------------- */
@@ -45,6 +22,7 @@ body {
   display: flex; /* Use flexbox layout */
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
+  position: relative;
 }
 
 .title {
@@ -55,14 +33,15 @@ body {
 
 .back-arrow {
   align-self: flex-end; /* Align right item to the end of the container */
-  color: #0066ff;
+  color: #1991C2;
+  font-size: 5vmin; /* Adjust font size as needed */
 }
 
 /* Style for the text "Back as well" */
 .back-text {
   margin-left: 5px; /* Add some space between the arrow and text */
-  color: #0066ff;
-  font-size: 2vw; /* Adjust font size as needed */
+  color: #1991C2;
+  font-size: 5vmin; /* Adjust font size as needed */
 }
 
 a {
@@ -70,7 +49,13 @@ a {
   cursor: url("/images/cursor-filled.png"), pointer;
 }
 
-/* ---------------- ABOUT TEXT STYLING ---------------- */
+/* ---------------- TEXT CONTENT STYLING ---------------- */
+
+.text-container {
+  position: relative;
+  font-size: 3vmax;
+  padding: 2vw;
+}
 
 .name {
   font-weight: 800;
@@ -89,12 +74,11 @@ a {
   text-decoration: none; /* Remove underline */
   cursor: url("/images/cursor-filled.png"), pointer;
   transition: color 0.3s ease;
-  color: #0066ff;
-  font-size: 3vw;
+  color: #1991C2;
 }
 
 .studio-hamish:hover {
-  color: white; /* Change text color to white on hover */
+  color: #3D348B; /* Change text color to white on hover */
 }
 
 /* ---------------- LOCATION STYLING ---------------- */
@@ -108,4 +92,29 @@ a {
 .location-subheader {
   font-weight: 800;
   margin-left: 1vw;
+}
+
+/* ---------------- SCROLL BAR ---------------- */
+
+::-webkit-scrollbar {
+  width: 4px; /* Width of the entire scrollbar */
+  height: 4px; /* Height of the entire scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFF33; /* Background of the scrollbar track */
+  border-radius: 15px; /* Rounded corners of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1991C2; /* Color of the scrollbar thumb */
+  border-radius: 15px; /* Rounded corners of the scrollbar thumb */
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 520px) {
+  .text-container {
+    font-size: 3.5vmax;
+  }
 }

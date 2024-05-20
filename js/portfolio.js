@@ -6,8 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return [
       "/images/portfolio-content/graphic-design/image2.png",
       "/images/portfolio-content/graphic-design/image4.jpg",
-      "/images/portfolio-content/graphic-design/image3.jpg",
-      "/images/portfolio-content/graphic-design/image1.jpg",
+      "/images/portfolio-content/graphic-design/image3.jpg"
     ];
   };
 

@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   height: 100vh;
-  background-color: #ffff33;
+  background-color: #fcff4b;
   cursor: url("/images/cursor.png"), auto;
 }
 
@@ -27,25 +27,6 @@ body {
   overflow-x: hidden;
 }
 
-/* MEDIA QUERIES */
-
-@media (min-width: 520px) {
-  .subtitle-1,
-  .subtitle-2 {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 900px) {
-  .title-1 {
-    align-self: flex-start;
-  }
-
-  .title-2 {
-    align-self: flex-end;
-  }
-}
-
 /* ---------------- LAMP STYLING ---------------- */
 
 .lamp-container {
@@ -56,8 +37,17 @@ body {
   z-index: 1;
 }
 
+.lamp-container img {
+  display: none;
+}
+
 .lamp {
   height: 45vh;
+  cursor: url("/images/cursor-filled.png"), pointer;
+}
+
+.lamp-long {
+  height: 55vh;
   cursor: url("/images/cursor-filled.png"), pointer;
 }
 
@@ -80,10 +70,12 @@ body {
 
 .title-1 {
   position: relative;
+  opacity: 0; /* Start invisible */
 }
 
 .title-2 {
   position: relative;
+  opacity: 0; /* Start invisible */
 }
 
 /* ---------------- SUBTITLE STYLING ---------------- */
@@ -108,7 +100,7 @@ body {
 /* ---------------- IMAGE STYLING ---------------- */
 
 .image-container {
-  background-color: #bffff8;
+  background-color: #9cfffa;
   width: 90%;
   height: 70vh;
   display: flex;
@@ -119,7 +111,6 @@ body {
 }
 
 .couch-scene {
-  width: 90%;
   object-fit: contain; /* Ensures the image maintains aspect ratio */
 }
 
@@ -133,26 +124,44 @@ body {
   pointer-events: none; /* Ensure the overlay does not interfere with interactions */
 }
 
-/* ---------------- nav-button STYLING ---------------- */
+/* MEDIA QUERIES */
 
-/* <!-- <a href="/pages/navigation.html">
-<div class="nav-button">CLICK ME</div>
-</a> --> */
-
-/* .nav-button {
-  font-family: "forma-djr-deck", sans-serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 2vh;
-  color: #172713;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: 17%;
-  cursor: pointer; 
-  transition: color 0.3s ease;
+@media (min-width: 520px) {
+  .subtitle-1,
+  .subtitle-2 {
+    font-size: 3vmin;
+  }
 }
 
-.nav-button:hover {
-  color: white; 
-} */
+@media (min-width: 561px) {
+  .lamp-container .lamp {
+    display: block;
+  }
+}
+
+/* Show the second image for viewport width <= 700px  */
+@media (max-width: 560px) {
+  .lamp-container .lamp-long {
+    display: block;
+  }
+}
+
+@media (min-width: 900px) {
+  .couch-scene {
+    width: 75%;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-1 {
+    align-self: flex-start;
+  }
+
+  .title-2 {
+    align-self: flex-end;
+  }
+
+  .couch-scene {
+    width: 90%;
+  }
+}

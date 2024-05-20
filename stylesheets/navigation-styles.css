@@ -3,7 +3,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 100%;
   cursor: url('/images/cursor.png'),auto;
 }
 
@@ -11,33 +11,33 @@ body, html {
 
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(3, 1fr); /* Four rows of equal height */
-  /* grid-template-rows: repeat(4, 1fr); Four rows of equal height */
+  /* grid-template-rows: repeat(3, 1fr); Four rows of equal height */
+  grid-template-rows: repeat(4, 1fr); 
   height: 100%;
 }
 
 .grid-item {
-  font-size: 7vw;
+  font-size: 6vmax;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 800;
   display: flex; /*Use flexbox for better alignment control*/
   align-items: center; /*Vertically center the content*/ 
-  justify-content: center;
-  padding-left: 20px;
+  justify-content:right;
+  padding-right: 20px;
 }
 
 /* Example styles for each row */
 .about-row { 
-  background-color: #f2ff26; 
+  background-color: #FFFF33; 
 }
 .portfolio-row { 
-  background-color: #993300; 
+  background-color: #FA6509; 
 }
 .cv-row { 
-  background-color: #BFFFE6; 
+  background-color: #E27333; 
 }
 .contact-row { 
-  background-color: #0066FF; 
+  background-color: #373E23; 
 }
 
 a { 
@@ -46,38 +46,42 @@ a {
 
 .section-toggle-about {
   text-decoration: none; /* Remove underline */
-  color: #0066FF;
+  color: #1991C2;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
 }
 
 .section-toggle-portfolio {
   text-decoration: none; /* Remove underline */
-  color: #BFFFE6;
+  color: #8C021B;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
 }
 
 .section-toggle-cv {
   text-decoration: none; /* Remove underline */
-  color: #993300;
+  color: #BBD932;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
 }
 
 .section-toggle-contact {
   text-decoration: none; /* Remove underline */
-  color: #ffff33;
+  color: #ffcae9;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
 }
 
+.section-toggle-about:hover,
+.section-toggle-cv:hover,
 .section-toggle-portfolio:hover,
 .section-toggle-contact:hover {
-  color: black; /* Change text color to black on hover */
+  color: #3D348B; /* Change text color to black on hover */
 }
 
-.section-toggle-about:hover,
-.section-toggle-cv:hover {
-  color: white; /* Change text color to black on hover */
+@media (max-width: 720px) {
+  .grid-item {
+    font-size: 9vmax;
+    justify-content:center;
+  }
 }

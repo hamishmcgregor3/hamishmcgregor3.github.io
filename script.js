@@ -1,10 +1,17 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the image element by id
-    var couchImage = document.getElementById('lampImage');
-
-    // Add a click event listener to the image
-    couchImage.addEventListener('click', function() {
-        // Redirect to the desired page
-        window.location.href = '/pages/navigation.html'; // Replace with your target URL
-    });
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function () {
+  // Create the fade-in animation
+  anime({
+    targets: ".title-1",
+    opacity: 1,
+    duration: 1000, // Duration in milliseconds
+    easing: "easeInOutQuad"
+  });
+  
+  anime({
+    targets: ".title-2",
+    opacity: 1,
+    duration: 1000, // Duration in milliseconds
+    easing: "easeInOutQuad"
+  });
 });

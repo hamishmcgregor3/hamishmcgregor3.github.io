@@ -3,23 +3,19 @@
 html,
 body {
   margin: 0;
-  height: 100%;
-  background-color: #0066ff;
+  height: 100vh;
+  background-color: #373E23;
   cursor: url('/images/cursor.png'),auto;
 }
 
 .page-container {
+  height: 50vh;
   position: relative;
   font-family: "forma-djr-deck", sans-serif;
-  font-size: 3vw;
   font-weight: 400;
-  color: #ffff33;
-  background-color: #0066ff;
-}
-
-.text-container {
-  position: relative;
-  padding: 2vw;
+  color: #ffcae9;
+  background-color: #373E23;
+  overflow-y: hidden;
 }
 
 /* ---------------- TITLE STYLING ---------------- */
@@ -29,6 +25,8 @@ body {
   display: flex; /* Use flexbox layout */
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
+  color: #ffcae9;
+  position: relative;
 }
 
 .title {
@@ -39,30 +37,74 @@ body {
 
 .back-arrow {
   align-self: flex-end; /* Align right item to the end of the container */
-  color: #ffff33;
+  color: #ffcae9;
+  font-size: 5vmin; /* Adjust font size as needed */
 }
 
 /* Style for the text "Back as well" */
 .back-text {
   margin-left: 5px; /* Add some space between the arrow and text */
-  color: #ffff33;
-  font-size: 2vw; /* Adjust font size as needed */
+  color: #ffcae9;
+  font-size: 5vmin; /* Adjust font size as needed */
 }
 
 a { 
-  color: #ffff33;
+  color: #ffcae9;
   cursor: url('/images/cursor-filled.png'), pointer;
 }
 
 /* ---------------- CONTENT STYLING ---------------- */
 
+.text-container {
+  position: absolute;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-size: 5vmin;
+  text-align: left;
+  padding-top: 2vw;
+  padding-left: 2vw;
+}
+
+
 .content-container {
   position: relative;
-  padding: 2vw;
   margin-top: 2vh;
 }
 
 .email-me p,
 .email-me a {
   display: inline; /* Make the paragraph and link inline */
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 640px) {
+  .text-container {
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding-left: 0vw;
+    font-size: 8vmin;
+  }
+  .page-container { 
+    height: 70vh;
+  }
+}
+
+/* ---------------- SCROLL BAR ---------------- */
+
+::-webkit-scrollbar {
+  width: 4px; /* Width of the entire scrollbar */
+  height: 4px; /* Height of the entire scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+  background: #373E23;
+  border-radius: 15px; /* Rounded corners of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffcae9; 
+  border-radius: 15px; /* Rounded corners of the scrollbar thumb */
 }

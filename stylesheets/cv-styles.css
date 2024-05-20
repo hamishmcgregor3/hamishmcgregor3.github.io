@@ -4,16 +4,16 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #bfffe6;
+  background-color: #E27333;
   cursor: url('/images/cursor.png'),auto;
 }
 
 .page-container {
   position: relative;
   font-family: "forma-djr-deck", sans-serif;
-  font-size: 3vw;
+  font-size: 3vmax;
   font-weight: 400;
-  color: #993300;
+  color: #BBD932;
 }
 
 .text-container {
@@ -25,23 +25,6 @@ a {
   cursor: url('/images/cursor-filled.png'), pointer;
 }
 
-/* ---------------- SCROLL BAR ---------------- */
-
-::-webkit-scrollbar {
-  width: 8px;             /* Width of the entire scrollbar */
-  height: 8px;            /* Height of the entire scrollbar (for horizontal scrollbar) */
-}
-
-::-webkit-scrollbar-track {
-  background: #bfffe6;     /* Background of the scrollbar track */
-  border-radius: 15px;     /* Rounded corners of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-  background: #993300;        /* Color of the scrollbar thumb */
-  border-radius: 15px;     /* Rounded corners of the scrollbar thumb */
-}
-
 /* ---------------- TITLE STYLING ---------------- */
 
 .title-container {
@@ -49,6 +32,8 @@ a {
   display: flex; /* Use flexbox layout */
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
+  color: #BBD932;
+  position: relative;
 }
 
 .title {
@@ -59,33 +44,34 @@ a {
 
 .back-arrow {
   align-self: flex-end; /* Align right item to the end of the container */
-  color: #993300;
-  cursor: url('/images/cursor-filled.png'), pointer;
+  color: #BBD932;
+  font-size: 5vmin; /* Adjust font size as needed */
 }
 
 /* Style for the text "Back as well" */
 .back-text {
   margin-left: 5px; /* Add some space between the arrow and text */
-  color: #993300;
-  font-size: 2vw; /* Adjust font size as needed */
+  color: #BBD932;
+  font-size: 5vmin; /* Adjust font size as needed */
+}
+
+a { 
+  color: #BBD932;
   cursor: url('/images/cursor-filled.png'), pointer;
 }
 
 /* ---------------- WORK CONTENT STYLING ---------------- */
 
 .work-container {
-  margin-top: 80px;
 }
 
 .work-title {
   text-decoration: underline;
-  margin-top: 20px;
 }
 
 .work-subheader {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 .job-title {
@@ -98,14 +84,14 @@ a {
 
 .work-text-content {
   font-weight: 400;
-  font-size: 2vw;
-  margin-top: 20px;
+  font-size: 2vmax;
+  margin-top: 2vmax;
 }
 
 /* ---------------- EDUCATION CONTENT STYLING ---------------- */
 
 .education-container {
-  margin-top: 80px;
+  margin-top: 4vmax;
 }
 
 .education-title {
@@ -115,7 +101,6 @@ a {
 .education-subheader {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
 }
 
 .education-subheader-title {
@@ -128,8 +113,7 @@ a {
 
 .education-text-content {
   font-weight: 400;
-  font-size: 2vw;
-  margin-top: 20px;
+  font-size: 2vmax;
 }
 
 .computer-science {
@@ -143,7 +127,7 @@ a {
 /* ---------------- SKILLS CONTENT STYLING ---------------- */
 
 .skills-container {
-  margin-top: 80px;
+  margin-top: 4vmax;
 }
 
 .skills-title {
@@ -160,14 +144,14 @@ a {
 .grid-item {
   padding: 20px;
   text-align: center;
-  font-size: 1.75vw;
+  font-size: 1.75vmax;
   font-weight: 600;
 }
 
 /* ---------------- RESUME CONTENT STYLING ---------------- */
 
 .resume-container {
-  margin-top: 80px;
+  margin-top: 4vmax;
 }
 
 .resume-title {
@@ -175,19 +159,33 @@ a {
 }
 
 .resume-download {
-  font-size: 1.75vw;
+  font-size: 1.75vmax;
   font-weight: 600;
   text-decoration: none;
-  color: #993300;
+  color: #BBD932;
 }
 
 .resume-download { 
-    margin-top: 50px;
-    color: #993300;
+    color: #BBD932;
     text-decoration: none;
 }
 
 .resume-container-2{ 
-    margin-top: 40px;
-    margin-left: 40px;
+}
+
+/* ---------------- SCROLL BAR ---------------- */
+
+::-webkit-scrollbar {
+  width: 4px;             /* Width of the entire scrollbar */
+  height: 4px;            /* Height of the entire scrollbar (for horizontal scrollbar) */
+}
+
+::-webkit-scrollbar-track {
+  background: #E27333;     /* Background of the scrollbar track */
+  border-radius: 15px;     /* Rounded corners of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BBD932;        /* Color of the scrollbar thumb */
+  border-radius: 15px;     /* Rounded corners of the scrollbar thumb */
 }
