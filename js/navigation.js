@@ -1,17 +1,12 @@
-// Wait for the DOM to be fully loaded
+// JavaScript using anime.js
 document.addEventListener("DOMContentLoaded", function () {
   anime({
-    targets: ".section-toggle-about",
-    opacity: 1,
-    duration: 1000, // Duration in milliseconds
-    easing: "easeInOutQuad",
+    targets: ".grid-item",
+    translateX: [-1000, 0], // Animate from -1000px to 0px on X-axis
+    width: ["0%", "100%"], // Animate width from 0% to 25%
+    opacity: [0,1], 
+    delay: anime.stagger(100), // Add stagger delay for each grid item
+    duration: 1000, // Duration of animation
+    easing: "easeInOutSine" // Easing function
   });
-
-  // Create the fade-in animation
-  //   anime({
-  //     targets: ".grid-item about-row",
-  //     duration: 1000, // Duration in milliseconds
-  //     backgroundColor: "#FFFF33",
-  //     easing: "easeInOutQuad",
-  //   });
 });
