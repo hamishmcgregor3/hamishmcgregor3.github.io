@@ -1,47 +1,52 @@
 // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-  // Create the fade-in animations
   anime({
     targets: ".title-1",
     opacity: 1,
-    duration: 2500, // Duration in milliseconds
+    duration: 2500, 
     easing: "easeInOutQuad",
   });
 
   anime({
     targets: ".title-2",
     opacity: 1,
-    duration: 3500, // Duration in milliseconds
+    duration: 3500, 
+    easing: "easeInOutQuad",
+  });
+
+  anime({
+    targets: ".lamp-container",
+    translateY: [-500, 0], 
+    translateX: ['-50%', '-50%'], 
+    duration: 1000, 
+    easing: "easeInOutSine", 
+  });
+
+  anime({
+    targets: ".subtitle-wrapper",
+    opacity: 1,
+    duration: 2000, 
+    easing: "easeInOutQuad",
+  });
+
+  anime({
+    targets: ".image-container",
+    opacity: 1,
+    duration: 1000,
     easing: "easeInOutQuad",
   });
 
   anime({
     targets: ".couch-scene",
     opacity: 1,
-    duration: 2000, // Duration in milliseconds
+    duration: 2000, 
     easing: "easeInOutQuad",
   });
 
   anime({
     targets: ".circle-pattern",
     opacity: 0.3,
-    duration: 4000, // Duration in milliseconds
-    easing: "easeInOutQuad",
-  });
-
-  anime({
-    targets: ".lamp-container",
-    translateY: [-500, 0], // Animate from -1000px to 0px on X-axis
-    translateX: ['-50%', '-50%'], // Horizontally center the element
-    // opacity: [0,1], 
-    duration: 1000, // Duration of animation
-    easing: "easeInOutSine", // Easing function
-  });
-
-  anime({
-    targets: ".subtitle-wrapper",
-    opacity: 1,
-    duration: 2000, // Duration in milliseconds
+    duration: 4000,
     easing: "easeInOutQuad",
   });
 
@@ -49,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .getElementById("lamp-img-mobile")
     .addEventListener("click", function (event) {
       
-      event.preventDefault(); // Prevent the default link navigation
+      event.preventDefault(); 
       const lampImg = document.getElementById("lamp-img-mobile");
       const images = ["/images/click_here_mobile.png", "/images/click_here_mobile_hover.png"];
 
@@ -80,7 +85,6 @@ document.addEventListener("DOMContentLoaded", function () {
           return;
         }
 
-        // Toggle the image source
         lampImg.src = toggleImageSrc(lampImg);
         elapsedTime += intervalDuration;
 

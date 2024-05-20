@@ -36,16 +36,15 @@ body {
 }
 
 .back-arrow {
-  align-self: flex-end; /* Align right item to the end of the container */
+  align-self: flex-end; 
   color: #ffcae9;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
-/* Style for the text "Back as well" */
 .back-text {
-  margin-left: 5px; /* Add some space between the arrow and text */
+  margin-left: 5px; 
   color: #ffcae9;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
 a { 
@@ -73,7 +72,7 @@ a {
 
 .email-me p,
 .email-me a {
-  display: inline; /* Make the paragraph and link inline */
+  display: inline;
 }
 
 /* MEDIA QUERIES */

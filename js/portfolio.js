@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
   const imageGrid = document.getElementById("image-grid");
 
-  // This function simulates fetching image paths. Replace it with actual logic to read image paths from your directory.
   const getImagePaths = () => {
     return [
-      "/images/portfolio-content/graphic-design/image2.png",
       "/images/portfolio-content/graphic-design/image4.jpg",
+      "/images/portfolio-content/graphic-design/image2.png",
       "/images/portfolio-content/graphic-design/image3.jpg"
     ];
   };

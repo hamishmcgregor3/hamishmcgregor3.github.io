@@ -24,7 +24,7 @@ body {
 
 .title-container {
   padding: 2vw;
-  display: flex; /* Use flexbox layout */
+  display: flex; 
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
   color: #8c021b;
@@ -38,16 +38,15 @@ body {
 }
 
 .back-arrow {
-  align-self: flex-end; /* Align right item to the end of the container */
+  align-self: flex-end; 
   color: #8c021b;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
-/* Style for the text "Back as well" */
 .back-text {
-  margin-left: 5px; /* Add some space between the arrow and text */
+  margin-left: 5px; 
   color: #8c021b;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
 a {
@@ -66,14 +65,14 @@ a {
 }
 
 .graphic-design-title {
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
   text-decoration: underline;
 }
 
 .graphic-design-content-container {
   margin-top: 4vmax;
   display: flex;
-  gap: 40px; /* Adjust the value as needed */
+  gap: 40px; 
 }
 
 /* ---------------- PLAYLIST DESIGN CONTENT STYLING ---------------- */
@@ -85,13 +84,12 @@ a {
 
 .playlist-title-container {
   position: relative;
-  /* text-align: right; */
 }
 
 .playlist-title {
   text-decoration: underline;
   font-weight: 400;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
 .playlist-content-container {
@@ -106,6 +104,7 @@ a {
 .photography-container {
   position: relative;
   margin-top: 2vmax;
+  display: none;
 }
 
 .photography-title-container {
@@ -115,13 +114,13 @@ a {
 .photography-title {
   text-decoration: underline;
   font-weight: 400;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
 .photography-content-container {
   margin-top: 2vmax;
   display: flex;
-  gap: 40px; /* Adjust the value as needed */
+  gap: 40px; 
 }
 
 /* ---------------- MODELING/STYLING CONTENT STYLING ---------------- */
@@ -129,6 +128,7 @@ a {
 .styling-container {
   position: relative;
   margin-top: 2vmax;
+  display: none;
 }
 
 .styling-title-container {
@@ -138,13 +138,13 @@ a {
 .styling-title {
   text-decoration: underline;
   font-weight: 400;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
 .styling-content-container {
   margin-top: 2vmax;
   display: flex;
-  gap: 40px; /* Adjust the value as needed */
+  gap: 40px; 
 }
 
 /* ---------------- GRID STYLING: ---------------- */
@@ -169,7 +169,7 @@ a {
   position: relative;
   width: 100%;
   padding-top: 100%; /* This creates a square aspect ratio */
-  border: 3px solid #8c021b; /* Add a 5pt black border */
+  border: 3px solid #8c021b; 
   z-index: 1;
 }
 

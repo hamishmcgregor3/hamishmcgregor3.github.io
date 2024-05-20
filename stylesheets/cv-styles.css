@@ -29,7 +29,7 @@ a {
 
 .title-container {
   padding: 2vw;
-  display: flex; /* Use flexbox layout */
+  display: flex; 
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
   color: #BBD932;
@@ -43,16 +43,15 @@ a {
 }
 
 .back-arrow {
-  align-self: flex-end; /* Align right item to the end of the container */
+  align-self: flex-end; 
   color: #BBD932;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
-/* Style for the text "Back as well" */
 .back-text {
-  margin-left: 5px; /* Add some space between the arrow and text */
+  margin-left: 5px; 
   color: #BBD932;
-  font-size: 5vmin; /* Adjust font size as needed */
+  font-size: 5vmin; 
 }
 
 a { 
@@ -136,11 +135,10 @@ a {
 
 .skills-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
-  gap: 10px; /* Gap between grid items */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
 }
 
-/* Style for grid items */
 .grid-item {
   padding: 20px;
   text-align: center;

@@ -5,29 +5,28 @@ body, html {
   padding: 0;
   height: 100%;
   cursor: url('/images/cursor.png'),auto;
+  /* background-color: #fcff4b; */
 }
 
 /* ---------------- GRID STYLING ---------------- */
 
 .grid-container {
   display: grid;
-  /* grid-template-rows: repeat(3, 1fr); Four rows of equal height */
   grid-template-rows: repeat(4, 1fr); 
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-x: hidden;
 }
 
 .grid-item {
   font-size: 6vmax;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 800;
-  display: flex; /*Use flexbox for better alignment control*/
+  display: flex; 
   align-items: center; /*Vertically center the content*/ 
   justify-content:right;
   opacity: 0;
 }
 
-/* Example styles for each row */
 .about-row { 
   background-color: #FFFF33; 
 }
@@ -47,28 +46,28 @@ a {
 }
 
 .section-toggle-about {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none;
   color: #1991C2;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
 }
 
 .section-toggle-portfolio {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   color: #8C021B;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
 }
 
 .section-toggle-cv {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   color: #BBD932;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
 }
 
 .section-toggle-contact {
-  text-decoration: none; /* Remove underline */
+  text-decoration: none; 
   color: #ffcae9;
   cursor: url('/images/cursor-filled.png'), pointer;
   transition: color 0.3s ease;
@@ -78,7 +77,7 @@ a {
 .section-toggle-cv:hover,
 .section-toggle-portfolio:hover,
 .section-toggle-contact:hover {
-  color: #3D348B; /* Change text color to black on hover */
+  color: #3D348B;
 }
 
 @media (max-width: 720px) {
