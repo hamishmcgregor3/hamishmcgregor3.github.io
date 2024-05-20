@@ -70,11 +70,13 @@ body {
 
 .title-1 {
   position: relative;
+  opacity: 0;
   /*opacity: 0;  Start invisible */
 }
 
 .title-2 {
   position: relative;
+  opacity: 0;
   /*opacity: 0;  Start invisible */
 }
 
