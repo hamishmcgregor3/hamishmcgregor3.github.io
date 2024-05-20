@@ -83,5 +83,6 @@ a {
   .grid-item {
     font-size: 9vmax;
     justify-content:center;
+    padding: 0;
   }
 }
