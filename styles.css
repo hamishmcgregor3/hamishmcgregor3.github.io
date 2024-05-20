@@ -70,12 +70,12 @@ body {
 
 .title-1 {
   position: relative;
-  opacity: 0; /* Start invisible */
+  /*opacity: 0;  Start invisible */
 }
 
 .title-2 {
   position: relative;
-  opacity: 0; /* Start invisible */
+  /*opacity: 0;  Start invisible */
 }
 
 /* ---------------- SUBTITLE STYLING ---------------- */
