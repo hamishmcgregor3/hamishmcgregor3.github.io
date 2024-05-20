@@ -102,7 +102,7 @@ body {
 .image-container {
   background-color: #9cfffa;
   width: 90%;
-  height: 65vh;
+  height: 68vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,7 +111,7 @@ body {
 }
 
 .couch-scene {
-  width: 80%;
+  /* width: 80%; */
   object-fit: contain; /* Ensures the image maintains aspect ratio */
 }
 
@@ -147,11 +147,11 @@ body {
   }
 }
 
-/* @media (min-width: 900px) {
+@media (min-width: 900px) {
   .couch-scene {
     width: 75%;
   }
-} */
+}
 
 @media (max-width: 900px) {
   .title-1 {
@@ -162,7 +162,7 @@ body {
     align-self: flex-end;
   }
 
-  /* .couch-scene {
+  .couch-scene {
     width: 90%;
-  } */
+  }
 }
