@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", function () {
   anime({
     targets: ".title-1",
     opacity: 1,
-    duration: 2500, 
+    duration: 1500, 
     easing: "easeInOutQuad",
   });
 
   anime({
     targets: ".title-2",
     opacity: 1,
-    duration: 3500, 
+    duration: 1500, 
     easing: "easeInOutQuad",
   });
 
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     targets: ".lamp-container",
     translateY: [-500, 0], 
     translateX: ['-50%', '-50%'], 
-    duration: 1000, 
+    duration: 2000, 
     easing: "easeInOutSine", 
   });
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   anime({
     targets: ".couch-scene",
     opacity: 1,
-    duration: 2000, 
+    duration: 3000, 
     easing: "easeInOutQuad",
   });
 
