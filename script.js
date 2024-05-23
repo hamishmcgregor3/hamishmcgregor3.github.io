@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
           lampImg.src = images[1];
           // Navigate to the next page
           setTimeout(function () {
-            window.location.href = "/pages/navigation.html";
+            window.location.href = "/pages/menu/";
           }, 300);
           return;
         }

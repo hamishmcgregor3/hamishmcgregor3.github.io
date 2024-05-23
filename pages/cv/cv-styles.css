@@ -11,8 +11,7 @@ body {
 .page-container {
   position: relative;
   font-family: "forma-djr-deck", sans-serif;
-  font-size: 3vmax;
-  font-weight: 400;
+  font-weight: 500;
   color: #BBD932;
 }
 
@@ -65,16 +64,19 @@ a {
 }
 
 .work-title {
-  text-decoration: underline;
+  font-size: 3vmax;
+  border-bottom: 4px solid;
 }
 
 .work-subheader {
+  margin-top: 1vw;
+  font-size: 3vmax;
   display: flex;
   justify-content: space-between;
 }
 
 .job-title {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .job-date {
@@ -82,7 +84,7 @@ a {
 }
 
 .work-text-content {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2vmax;
   margin-top: 2vmax;
 }
@@ -94,16 +96,19 @@ a {
 }
 
 .education-title {
-  text-decoration: underline;
+  font-size: 3vmax;
+  border-bottom: 4px solid;
 }
 
 .education-subheader {
+  margin-top: 1vw;
+  font-size: 3vmax;
   display: flex;
   justify-content: space-between;
 }
 
 .education-subheader-title {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .education-date {
@@ -111,16 +116,16 @@ a {
 }
 
 .education-text-content {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2vmax;
 }
 
 .computer-science {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .design {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 /* ---------------- SKILLS CONTENT STYLING ---------------- */
@@ -130,45 +135,41 @@ a {
 }
 
 .skills-title {
-  text-decoration: underline;
+  font-size: 3vmax;
+  border-bottom: 4px solid;
 }
 
 .skills-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; 
 }
 
 .grid-item {
-  padding: 20px;
+  padding: 1.5vmax;
   text-align: center;
   font-size: 1.75vmax;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 /* ---------------- RESUME CONTENT STYLING ---------------- */
 
 .resume-container {
-  margin-top: 4vmax;
 }
 
 .resume-title {
-  text-decoration: underline;
+  font-size: 3vmax;
+  border-bottom: 4px solid;
+}
+
+.resume-container-2 { 
+  margin-top: 1vw;
 }
 
 .resume-download {
   font-size: 1.75vmax;
-  font-weight: 600;
+  font-weight: 800;
   text-decoration: none;
   color: #BBD932;
-}
-
-.resume-download { 
-    color: #BBD932;
-    text-decoration: none;
-}
-
-.resume-container-2{ 
 }
 
 /* ---------------- SCROLL BAR ---------------- */
@@ -186,4 +187,18 @@ a {
 ::-webkit-scrollbar-thumb {
   background: #BBD932;        /* Color of the scrollbar thumb */
   border-radius: 15px;     /* Rounded corners of the scrollbar thumb */
+}
+
+/* ---------------- Media SIZING  ---------------- */
+
+@media (max-width: 420px) {
+  .work-title, 
+  .work-subheader,
+  .education-title, 
+  .education-subheader, 
+  .skills-title, 
+  .resume-title
+  {
+    font-size: 2.5vmax;
+  }
 }
