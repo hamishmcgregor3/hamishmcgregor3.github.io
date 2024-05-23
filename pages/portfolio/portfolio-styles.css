@@ -24,7 +24,7 @@ body {
 
 .title-container {
   padding: 2vw;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
   color: #8c021b;
@@ -38,19 +38,36 @@ body {
 }
 
 .back-arrow {
-  align-self: flex-end; 
+  align-self: flex-end;
   color: #8c021b;
-  font-size: 5vmin; 
+  font-size: 5vmin;
 }
 
 .back-text {
-  margin-left: 5px; 
+  margin-left: 5px;
   color: #8c021b;
-  font-size: 5vmin; 
+  font-size: 5vmin;
 }
 
 a {
   cursor: url("/images/cursor-filled.png"), pointer;
+}
+
+/* ---------------- GRID STYLING: ---------------- */
+
+.image-grid {
+  margin-top: 2vmax;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 2vmax;
+  width: 100%;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
 }
 
 /* ---------------- GRAPHIC DESIGN CONTENT STYLING ---------------- */
@@ -65,14 +82,14 @@ a {
 }
 
 .graphic-design-title {
-  font-size: 5vmin; 
+  font-size: 5vmin;
   text-decoration: underline;
 }
 
 .graphic-design-content-container {
   margin-top: 4vmax;
   display: flex;
-  gap: 40px; 
+  gap: 40px;
 }
 
 /* ---------------- PLAYLIST DESIGN CONTENT STYLING ---------------- */
@@ -89,7 +106,7 @@ a {
 .playlist-title {
   text-decoration: underline;
   font-weight: 500;
-  font-size: 5vmin; 
+  font-size: 5vmin;
 }
 
 .playlist-content-container {
@@ -104,7 +121,6 @@ a {
 .photography-container {
   position: relative;
   margin-top: 2vmax;
-  display: none;
 }
 
 .photography-title-container {
@@ -114,13 +130,13 @@ a {
 .photography-title {
   text-decoration: underline;
   font-weight: 500;
-  font-size: 5vmin; 
+  font-size: 5vmin;
 }
 
 .photography-content-container {
   margin-top: 2vmax;
   display: flex;
-  gap: 40px; 
+  gap: 40px;
 }
 
 /* ---------------- MODELING/STYLING CONTENT STYLING ---------------- */
@@ -128,7 +144,6 @@ a {
 .styling-container {
   position: relative;
   margin-top: 2vmax;
-  display: none;
 }
 
 .styling-title-container {
@@ -138,49 +153,13 @@ a {
 .styling-title {
   text-decoration: underline;
   font-weight: 500;
-  font-size: 5vmin; 
+  font-size: 5vmin;
 }
 
 .styling-content-container {
   margin-top: 2vmax;
   display: flex;
-  gap: 40px; 
-}
-
-/* ---------------- GRID STYLING: ---------------- */
-
-#image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-  gap: 2vmax;
-  width: 100%;
-}
-
-.container-number {
-  color: #8c021b;
-  position: absolute;
-  top: -2vw;
-  left: 0;
-  z-index: 2;
-  font-size: 1.5vmax;
-}
-
-.image-container {
-  position: relative;
-  width: 100%;
-  padding-top: 100%; /* This creates a square aspect ratio */
-  border: 3px solid #8c021b; 
-  z-index: 1;
-}
-
-.image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  gap: 40px;
 }
 
 /* ---------------- SCROLL BAR ---------------- */
@@ -199,6 +178,8 @@ a {
   background: #8c021b; /* Color of the scrollbar thumb */
   border-radius: 15px; /* Rounded corners of the scrollbar thumb */
 }
+
+/* ---------------- MEDIA QUERIES ---------------- */
 
 @media (max-width: 640px) {
   .playlist-content-container {
@@ -221,4 +202,3 @@ a {
     top: -5vw;
   }
 }
-
