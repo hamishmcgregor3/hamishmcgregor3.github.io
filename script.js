@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     translateY: [-500, 0], 
     translateX: ['-50%', '-50%'], 
     duration: 2000, 
+    opacity: 1,
     easing: "easeInOutSine", 
   });
 
