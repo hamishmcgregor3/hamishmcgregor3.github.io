@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #FFFF33;
+  background-color: #ffff33;
   cursor: url("/images/cursor.png"), auto;
 }
 
@@ -12,14 +12,14 @@ body {
   position: relative;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 500;
-  color: #1991C2;
+  color: #1991c2;
 }
 
 /* ---------------- TITLE STYLING ---------------- */
 
 .title-container {
   padding: 2vw;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
   position: relative;
@@ -32,15 +32,15 @@ body {
 }
 
 .back-arrow {
-  align-self: flex-end; 
-  color: #1991C2;
-  font-size: 5vmin; 
+  align-self: flex-end;
+  color: #1991c2;
+  font-size: 5vmin;
 }
 
 .back-text {
-  margin-left: 5px; 
-  color: #1991C2;
-  font-size: 5vmin; 
+  margin-left: 5px;
+  color: #1991c2;
+  font-size: 5vmin;
 }
 
 a {
@@ -72,14 +72,14 @@ a {
   font-weight: 800;
   cursor: url("/images/cursor-filled.png"), pointer;
   transition: color 0.3s ease;
-  color: #1991C2;
+  color: #1991c2;
 }
 
 .studio-hamish:hover {
-  color: #3D348B; 
+  color: #3d348b;
 }
 
-.video-container{ 
+.video-container {
   width: 100%;
   position: relative;
   display: flex;
@@ -88,9 +88,9 @@ a {
   font-size: 1.5vmax;
 }
 
-.diditmyself { 
+.diditmyself {
   width: 240px;
-  border: solid 2px #1991C2;
+  border: solid 2px #1991c2;
   border-radius: 8px;
 }
 
@@ -119,12 +119,12 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FFFF33; /* Background of the scrollbar track */
+  background: #ffff33; /* Background of the scrollbar track */
   border-radius: 15px; /* Rounded corners of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1991C2; /* Color of the scrollbar thumb */
+  background: #1991c2; /* Color of the scrollbar thumb */
   border-radius: 15px; /* Rounded corners of the scrollbar thumb */
 }
 
@@ -135,7 +135,11 @@ a {
     font-size: 3.5vmax;
   }
 
-  .video-container{ 
+  .location-text-container {
+    font-size: 3vmax;
+  }
+
+  .video-container {
     width: 100%;
     position: relative;
     display: flex;
@@ -145,7 +149,7 @@ a {
     align-content: center;
   }
 
-  .diditmyself { 
+  .diditmyself {
     width: 200px;
   }
 }
