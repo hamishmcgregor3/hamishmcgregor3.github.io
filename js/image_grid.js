@@ -14,9 +14,14 @@ const createImageGrid = async (elementId, folderPath) => {
 
     const imagePaths = await fetchImagePaths(folderPath);
     imagePaths.forEach(path => {
+        const imgContainer = document.createElement('div');
+        imgContainer.className = 'image-container';
+
         const img = document.createElement('img');
         img.src = path;
         img.loading = 'lazy';
-        container.appendChild(img);
+
+        imgContainer.appendChild(img);
+        container.appendChild(imgContainer);
     });
 };
