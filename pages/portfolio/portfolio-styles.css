@@ -206,20 +206,4 @@ a {
   .playlist-content-container {
     flex-direction: column;
   }
-
-  .container-number {
-    top: -3vw;
-  }
-}
-
-@media (max-width: 460px) {
-  .container-number {
-    top: -4vw;
-  }
-}
-
-@media (max-width: 300px) {
-  .container-number {
-    top: -5vw;
-  }
 }
