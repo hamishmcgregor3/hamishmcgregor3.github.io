@@ -4,15 +4,15 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #E27333;
-  cursor: url('/images/cursor.png'),auto;
+  background-color: #e27333;
+  cursor: url("/images/cursor.png"), auto;
 }
 
 .page-container {
   position: relative;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 500;
-  color: #BBD932;
+  color: #bbd932;
 }
 
 .text-container {
@@ -20,18 +20,18 @@ body {
   padding: 2vw;
 }
 
-a { 
-  cursor: url('/images/cursor-filled.png'), pointer;
+a {
+  cursor: url("/images/cursor-filled.png"), pointer;
 }
 
 /* ---------------- TITLE STYLING ---------------- */
 
 .title-container {
   padding: 2vw;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
-  color: #BBD932;
+  color: #bbd932;
   position: relative;
 }
 
@@ -42,34 +42,74 @@ a {
 }
 
 .back-arrow {
-  align-self: flex-end; 
-  color: #BBD932;
-  font-size: 5vmin; 
+  align-self: flex-end;
+  color: #bbd932;
+  font-size: 5vmin;
 }
 
 .back-text {
-  margin-left: 5px; 
-  color: #BBD932;
-  font-size: 5vmin; 
+  margin-left: 5px;
+  color: #bbd932;
+  font-size: 5vmin;
 }
 
-a { 
-  color: #BBD932;
-  cursor: url('/images/cursor-filled.png'), pointer;
+a {
+  color: #bbd932;
+  cursor: url("/images/cursor-filled.png"), pointer;
+}
+
+/* ---------------- RESUME CONTENT STYLING ---------------- */
+
+.resume-title {
+  font-size: 3vmax;
+  font-weight: 800;
+}
+
+.resume-container-2 {
+  margin-top: 5px;
+}
+
+.resume-download {
+  font-size: 1.75vmax;
+  font-style: italic;
+  color: #bbd932;
+  text-decoration: none;
+}
+
+.resume-download:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ---------------- SKILLS CONTENT STYLING ---------------- */
+
+.skills-container {
+  margin-top: 40px;
+}
+
+.skills-title {
+  font-size: 3vmax;
+  border-bottom: 2px solid;
+}
+
+.skills-content-container {
+  margin-top: 5px;
+  font-size: 1.75vmax;
 }
 
 /* ---------------- WORK CONTENT STYLING ---------------- */
 
 .work-container {
+  margin-top: 15px;
 }
 
 .work-title {
   font-size: 3vmax;
-  border-bottom: 4px solid;
+  border-bottom: 2px solid;
 }
 
 .work-subheader {
-  margin-top: 1vw;
+  margin-top: 5px;
   font-size: 3vmax;
   display: flex;
   justify-content: space-between;
@@ -84,24 +124,24 @@ a {
 }
 
 .work-text-content {
+  margin-top: 5px;
   font-weight: 500;
   font-size: 2vmax;
-  margin-top: 2vmax;
 }
 
 /* ---------------- EDUCATION CONTENT STYLING ---------------- */
 
 .education-container {
-  margin-top: 4vmax;
+  margin-top: 15px;
 }
 
 .education-title {
   font-size: 3vmax;
-  border-bottom: 4px solid;
+  border-bottom: 2px solid;
 }
 
 .education-subheader {
-  margin-top: 1vw;
+  margin-top: 5px;
   font-size: 3vmax;
   display: flex;
   justify-content: space-between;
@@ -128,77 +168,32 @@ a {
   font-weight: 800;
 }
 
-/* ---------------- SKILLS CONTENT STYLING ---------------- */
-
-.skills-container {
-  margin-top: 4vmax;
-}
-
-.skills-title {
-  font-size: 3vmax;
-  border-bottom: 4px solid;
-}
-
-.skills-grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-}
-
-.grid-item {
-  padding: 1.5vmax;
-  text-align: center;
-  font-size: 1.75vmax;
-  font-weight: 500;
-}
-
-/* ---------------- RESUME CONTENT STYLING ---------------- */
-
-.resume-container {
-}
-
-.resume-title {
-  font-size: 3vmax;
-  border-bottom: 4px solid;
-}
-
-.resume-container-2 { 
-  margin-top: 1vw;
-}
-
-.resume-download {
-  font-size: 1.75vmax;
-  font-weight: 800;
-  text-decoration: none;
-  color: #BBD932;
-}
-
 /* ---------------- SCROLL BAR ---------------- */
 
 ::-webkit-scrollbar {
-  width: 4px;             /* Width of the entire scrollbar */
-  height: 4px;            /* Height of the entire scrollbar (for horizontal scrollbar) */
+  width: 4px; /* Width of the entire scrollbar */
+  height: 4px; /* Height of the entire scrollbar (for horizontal scrollbar) */
 }
 
 ::-webkit-scrollbar-track {
-  background: #E27333;     /* Background of the scrollbar track */
-  border-radius: 15px;     /* Rounded corners of the scrollbar track */
+  background: #e27333; /* Background of the scrollbar track */
+  border-radius: 15px; /* Rounded corners of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #BBD932;        /* Color of the scrollbar thumb */
-  border-radius: 15px;     /* Rounded corners of the scrollbar thumb */
+  background: #bbd932; /* Color of the scrollbar thumb */
+  border-radius: 15px; /* Rounded corners of the scrollbar thumb */
 }
 
 /* ---------------- Media SIZING  ---------------- */
 
 @media (max-width: 420px) {
-  .work-title, 
+  .work-title,
   .work-subheader,
-  .education-title, 
-  .education-subheader, 
-  .skills-title, 
-  .resume-title
-  {
+  .education-title,
+  .education-subheader,
+  .skills-title,
+  .resume-title {
     font-size: 2.5vmax;
   }
 }
