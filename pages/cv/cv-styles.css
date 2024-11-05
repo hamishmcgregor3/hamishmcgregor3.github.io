@@ -65,6 +65,10 @@ a {
   font-weight: 800;
 }
 
+.resume-container {
+  margin: 40px;
+}
+
 .resume-container-2 {
   margin-top: 5px;
 }
@@ -84,7 +88,7 @@ a {
 /* ---------------- SKILLS CONTENT STYLING ---------------- */
 
 .skills-container {
-  margin-top: 40px;
+  margin: 40px;
 }
 
 .skills-title {
@@ -100,7 +104,7 @@ a {
 /* ---------------- WORK CONTENT STYLING ---------------- */
 
 .work-container {
-  margin-top: 15px;
+  margin: 40px;
 }
 
 .work-title {
@@ -132,7 +136,7 @@ a {
 /* ---------------- EDUCATION CONTENT STYLING ---------------- */
 
 .education-container {
-  margin-top: 15px;
+  margin: 40px;
 }
 
 .education-title {
