@@ -1,128 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>studio hamish - cv</title>
-    <link rel="stylesheet" href="/pages/cv/cv-styles.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/oyu8gag.css" />
-  </head>
-  <body>
-    <div class="page-container">
-      <div class="title-container">
-        <div class="title">CV</div>
-        <a href="/pages/menu/" class="back-arrow">
-          &larr;
-          <!-- Unicode character for left arrow -->
-          <span class="back-text">Back as well</span>
-        </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>studio hamish - cv</title>
+  <link rel="stylesheet" href="/pages/cv/cv-styles.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/oyu8gag.css" />
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="title-container">
+      <div class="title">CV</div>
+      <a href="/pages/menu/" class="back-arrow">
+        &larr;
+        <!-- Unicode character for left arrow -->
+        <span class="back-text">Back as well</span>
+      </a>
+    </div>
+    <div class="text-container">
+      <div class="resume-container">
+        <div class="resume-title">Download</div>
+        <div class="resume-container-2">
+          <a href="/downloads/hamish_mcgregor_resume.pdf" download="hamish_mcgregor_resume.pdf"
+            class="resume-download">Click Here To Download A Copy Of My CV</a>
+        </div>
       </div>
-      <div class="text-container">
-        <div class="resume-container">
-          <div class="resume-title">Download</div>
-          <div class="resume-container-2">
-            <a
-              href="/downloads/hamish_mcgregor_resume.pdf"
-              download="hamish_mcgregor_resume.pdf"
-              class="resume-download"
-              >Click Here To Download A Copy Of My CV</a
-            >
-          </div>
+      <div class="skills-container">
+        <div class="skills-title">Skills</div>
+        <div class="skills-content-container">
+          <p>
+            <strong>Languages:</strong>
+            C#, JavaScript, TypeScript, HTML, CSS, SQL
+          </p>
+          <p>
+            <strong>Frameworks and More:</strong>
+            .NET, React, Node.js, Bootstrap, MSSQL Server, Git, DevOps, Adobe Experience Manager
+          </p>
+          <p>
+            <strong>Design Tools:</strong>
+            Figma, Adobe XD, Illustrator, Photoshop, InDesign
+          </p>
         </div>
-        <div class="skills-container">
-          <div class="skills-title">Skills</div>
-          <div class="skills-content-container">
-            <p>
-              <strong>Languages:</strong> C# , SQL , JavaScript , TypeScript ,
-              HTML , CSS
-            </p>
-            <p>
-              <strong>Frameworks and More:</strong> .NET & .NET Core , React ,
-              Node.js , Bootstrap , Microsoft SQL Server , Git , Azure DevOps ,
-              Adobe Experience Manager
-            </p>
-            <p>
-              <strong>Design Tools:</strong> Figma , Illustrator , Photoshop ,
-              InDesign
-            </p>
-          </div>
+      </div>
+      <div class="work-container">
+        <div class="work-title">Work Experience</div>
+        <div class="work-subheader">
+          <span class="job-title">Software Developer @ AllianceBernstein</span>
+          <span class="job-date">Aug 2021 - Apr 2024</span>
         </div>
-        <div class="work-container">
-          <div class="work-title">Work Experience</div>
-          <div class="work-subheader">
-            <span class="job-title"
-              >Software Developer @ AllianceBernstein</span
-            >
-            <span class="job-date">Aug 2021 - Apr 2024</span>
-          </div>
-          <div class="work-text-content">
-            Worked on a web development team for Bernstein.com, a web
-            application built using .NET.
-            <br />
-            <br />
-            Responsible for developing new features and resolving support
-            tickets to address site issues. Utilized both frontend technologies
-            (React, JavaScript, HTML, CSS) and backend technologies (C#, .NET,
-            SQL) to implement changes, enhancing the site's functionality and
-            user experience.
-            <br />
-            <br />
-            Led the migration of the site's post-login content from Methode to
-            Adobe Experience Manager. Developed a new content service as a .NET
-            class library, consumed as a NuGet package, for the web app to
-            accommodate this change in CMS.
-            <br />
-            <br />
-            Styled and developed Material UI Components, for a component library
-            hosted in Storybook, that offers developers customizable company
-            themed UI components as easily copyable HTML markup.
-            <br />
-            <br />
-            Graduated from AB’s Technology and Operations (TOP) program,
-            completing three 6-month rotations as a developer across various
-            teams.
-            <br />
-            <br />
-            Designed and developed financial tools, using .NET WinForms
-            applications, to enhance functionality for an in-house wealth
-            management service used by portfolio managers. These tools replaced
-            manually executed SQL stored procedures, resulting in improved
-            efficiency and workflow automation.
-            <br />
-            <br />
-            Implemented an automated frontend test suite utilizing Cypress and
-            TypeScript for a bond trading platform. Unit tests simulated user
-            activity to validate expected functionality across the web
-            application. These tests were integrated into DevOps release
-            pipelines, significantly reducing manual testing efforts.
-          </div>
+        <div class="work-text-content">
+          Worked on the web development team responsible for Bernstein.com, a private wealth management site that offers
+          information about AB and its services before login and provides high-net-worth investors with access to
+          sensitive account information and various account management actions after login.
+          <br />
+          <br />
+          Utilized frontend (React, JS, HTML & CSS) and backend (.NET, C#, SQL) technologies daily to develop new
+          features and resolve support tickets, enhancing the site's functionality and user experience.
+          <br />
+          <br />
+          Led the migration of the site's post-login content from an expiring CMS to Adobe Experience Manager (AEM).
+          Built a NuGet Package to handle the site's transition to AEM, incorporating HTTP requests for content
+          retrieval, caching for optimized performance, and server-side file monitoring to ensure the latest content was
+          displayed.
+          <br />
+          <br />
+          Designed and developed React components for the firm's first design system, built on Material UI and deployed
+          via Vercel. The system provided developers with easily customizable, company-branded UI components as reusable
+          HTML markup.
+          <br />
+          <br />
+          Developed a suite of frontend tests using TypeScript, simulating user interactions to validate expected
+          functionality and ensure correct rendering of DOM elements. Automated the test suite with Cypress and
+          integrated it into DevOps pipelines, significantly reducing manual testing efforts and improving deployment
+          efficiency.
+          <br />
+          <br />
+          Designed and developed new financial tools for a portfolio management desktop application (.NET WinForms) used
+          by portfolio managers to handle account-specific requests for their clients. These tools replaced manually
+          executed SQL stored procedures, freeing up developers' time and giving portfolio managers greater autonomy.
+          <br />
+          <br />
+          Integrated Glance Cobrowsing into Bernstein.com, enabling older or less tech-savvy clients to easily share
+          their screen with AB financial advisors for assistance in navigating the site and completing account-related
+          tasks, while ensuring sensitive financial data remained protected.
+          <br />
+          <br />
+          Completed AB's Technology and Operations Graduate program, which included three 6-month rotations as a
+          software developer, gaining experience across multiple teams.
         </div>
-        <div class="education-container">
-          <div class="education-title">Education</div>
-          <div class="education-subheader">
-            <span class="education-subheader-title"
-              >Washington University in Saint Louis</span
-            >
-            <span class="education-date">Aug 2017 - May 2021</span>
-          </div>
-          <div class="education-text-content">
-            Bachelor of Science
-            <br />
-            Major in <span class="computer-science">Computer Science</span> +
-            Minor in <span class="design">Design</span>
-            <br />
-            <br />
-            3.6 GPA
-            <br />
-            <br />
-            Dean's List of Engineering: Spring 2021, Fall 2020, Spring 2020,
-            Fall 2019, Spring 2018, and Fall 2017
-            <br />
-            <br />
-            Varsity Basketball 2017 - 2019
-          </div>
+      </div>
+      <div class="education-container">
+        <div class="education-title">Education</div>
+        <div class="education-subheader">
+          <span class="education-subheader-title">Washington University in Saint Louis</span>
+          <span class="education-date">Aug 2017 - May 2021</span>
+        </div>
+        <div class="education-text-content">
+          Bachelor of Science
+          <br />
+          Major in <span class="computer-science">Computer Science</span> +
+          Minor in <span class="design">Design</span>
+          <br />
+          <br />
+          3.6 GPA
+          <br />
+          <br />
+          Dean's List of Engineering: Spring 2021, Fall 2020, Spring 2020,
+          Fall 2019, Spring 2018, and Fall 2017
+          <br />
+          <br />
+          Varsity Basketball 2017 - 2019
         </div>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
