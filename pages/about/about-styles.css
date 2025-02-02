@@ -114,6 +114,18 @@ a {
   margin-left: 1vw;
 }
 
+/* ---------------- Hand Wave Styling ---------------- */
+
+.handWave { 
+  display: inline-block;
+  margin-left: 15px;
+  animation: wave 2s infinite; 
+}
+
+@keyframes wave {
+  50% {transform: rotate(30deg);}
+}
+
 /* ---------------- SCROLL BAR ---------------- */
 
 ::-webkit-scrollbar {

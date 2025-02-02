@@ -4,7 +4,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  background-color: #e27333;
+  background-color: #bbd932;
   cursor: url("/images/cursor.png"), auto;
 }
 
@@ -12,7 +12,7 @@ body {
   position: relative;
   font-family: "forma-djr-deck", sans-serif;
   font-weight: 500;
-  color: #bbd932;
+  color: #e27333;
 }
 
 .text-container {
@@ -31,7 +31,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
-  color: #bbd932;
+  color: #e27333;
   position: relative;
 }
 
@@ -43,18 +43,18 @@ a {
 
 .back-arrow {
   align-self: flex-end;
-  color: #bbd932;
+  color: #e27333;
   font-size: 5vmin;
 }
 
 .back-text {
   margin-left: 5px;
-  color: #bbd932;
+  color: #e27333;
   font-size: 5vmin;
 }
 
 a {
-  color: #bbd932;
+  color: #e27333;
   cursor: url("/images/cursor-filled.png"), pointer;
 }
 
@@ -76,7 +76,7 @@ a {
 .resume-download {
   font-size: 1.75vmax;
   font-style: italic;
-  color: #bbd932;
+  color: #e27333;
   text-decoration: none;
 }
 
@@ -180,12 +180,12 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #e27333; /* Background of the scrollbar track */
+  background: #bbd932; /* Background of the scrollbar track */
   border-radius: 15px; /* Rounded corners of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #bbd932; /* Color of the scrollbar thumb */
+  background: #e27333; /* Color of the scrollbar thumb */
   border-radius: 15px; /* Rounded corners of the scrollbar thumb */
 }
 

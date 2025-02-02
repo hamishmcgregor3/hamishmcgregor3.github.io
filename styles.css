@@ -87,7 +87,7 @@ body {
   font-size: 3vw;
   color: #172713;
   position: relative;
-  width: 90%;
+  width: 80%;
   text-decoration: underline;
   opacity: 0;
 }
@@ -101,11 +101,11 @@ body {
 .image-container {
   opacity: 0;
   background-color: #9cfffa;
-  width: 90%;
-  height: 68vh;
+  width: 80%;
+  height: 60vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   position: relative; 
 }
