@@ -32,7 +32,7 @@ body {
 }
 
 .title {
-  font-size: 12vw;
+  font-size: 8vw;
   font-weight: 800;
   line-height: 1;
 }
@@ -84,7 +84,8 @@ a {
 .image-grid-photography .image-container {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
+  padding-top: 100%;
+  /* 1:1 Aspect Ratio */
   overflow: hidden;
   border-radius: 8px;
   border: 2px solid #8c021b;
@@ -115,7 +116,7 @@ a {
   text-decoration: underline;
 }
 
-.graphic-subtitle-container{
+.graphic-subtitle-container {
   padding-top: 1vmax;
   font-size: 2.5vmin;
 }
@@ -143,7 +144,7 @@ a {
   font-size: 5vmin;
 }
 
-.playlist-subtitle-container{
+.playlist-subtitle-container {
   padding-top: 1vmax;
   font-size: 2.5vmin;
 }
@@ -172,7 +173,7 @@ a {
   font-size: 5vmin;
 }
 
-.photography-subtitle-container{
+.photography-subtitle-container {
   padding-top: 1vmax;
   font-size: 2.5vmin;
 }
@@ -200,7 +201,7 @@ a {
   font-size: 5vmin;
 }
 
-.styling-subtitle-container{
+.styling-subtitle-container {
   padding-top: 1vmax;
   font-size: 2.5vmin;
 }
@@ -214,18 +215,24 @@ a {
 /* ---------------- SCROLL BAR ---------------- */
 
 ::-webkit-scrollbar {
-  width: 4px; /* Width of the entire scrollbar */
-  height: 4px; /* Height of the entire scrollbar (for horizontal scrollbar) */
+  width: 4px;
+  /* Width of the entire scrollbar */
+  height: 4px;
+  /* Height of the entire scrollbar (for horizontal scrollbar) */
 }
 
 ::-webkit-scrollbar-track {
-  background: #fa6509; /* Background of the scrollbar track */
-  border-radius: 15px; /* Rounded corners of the scrollbar track */
+  background: #fa6509;
+  /* Background of the scrollbar track */
+  border-radius: 15px;
+  /* Rounded corners of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #8c021b; /* Color of the scrollbar thumb */
-  border-radius: 15px; /* Rounded corners of the scrollbar thumb */
+  background: #8c021b;
+  /* Color of the scrollbar thumb */
+  border-radius: 15px;
+  /* Rounded corners of the scrollbar thumb */
 }
 
 /* ---------------- MEDIA QUERIES ---------------- */

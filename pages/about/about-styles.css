@@ -19,6 +19,8 @@ body {
 
 .title-container {
   padding: 2vw;
+  margin-left: 40px;
+  margin-right: 40px;
   display: flex;
   justify-content: space-between;
   font-family: "forma-djr-deck", sans-serif;
@@ -26,7 +28,7 @@ body {
 }
 
 .title {
-  font-size: 12vw;
+  font-size: 8vw;
   font-weight: 800;
   line-height: 1;
 }
@@ -55,8 +57,8 @@ a {
   font-size: 3vmax;
   padding: 2vw;
   margin-top: 20px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .name {
@@ -116,31 +118,39 @@ a {
 
 /* ---------------- Hand Wave Styling ---------------- */
 
-.handWave { 
+.handWave {
   display: inline-block;
   margin-left: 15px;
-  animation: wave 2s infinite; 
+  animation: wave 2s infinite;
 }
 
 @keyframes wave {
-  50% {transform: rotate(30deg);}
+  50% {
+    transform: rotate(30deg);
+  }
 }
 
 /* ---------------- SCROLL BAR ---------------- */
 
 ::-webkit-scrollbar {
-  width: 4px; /* Width of the entire scrollbar */
-  height: 4px; /* Height of the entire scrollbar (for horizontal scrollbar) */
+  width: 4px;
+  /* Width of the entire scrollbar */
+  height: 4px;
+  /* Height of the entire scrollbar (for horizontal scrollbar) */
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffff33; /* Background of the scrollbar track */
-  border-radius: 15px; /* Rounded corners of the scrollbar track */
+  background: #ffff33;
+  /* Background of the scrollbar track */
+  border-radius: 15px;
+  /* Rounded corners of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1991c2; /* Color of the scrollbar thumb */
-  border-radius: 15px; /* Rounded corners of the scrollbar thumb */
+  background: #1991c2;
+  /* Color of the scrollbar thumb */
+  border-radius: 15px;
+  /* Rounded corners of the scrollbar thumb */
 }
 
 /* MEDIA QUERIES */
